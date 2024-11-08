@@ -93,7 +93,7 @@ class Reprocessamento(QThread):
                         caminho_lote_miolo = pega_pasta_lote_miolo(coresmiolo, papelmiolo, gramaturamiolo, formatomiolo)
 
                         # Busca arquivos pelo ISBN
-                        caminho_busca = os.getenv('PATH_REDE', r"\\192.168.0.28\Dialetica\Dialetica")
+                        caminho_busca = os.getenv('PATH_REDE', r"\\rede")
                         arquivos = self.encontra_arquivo(caminho_busca, isbn)
 
                         # Verifica se encontrou os arquivos necessários
