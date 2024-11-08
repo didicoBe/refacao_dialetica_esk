@@ -90,7 +90,7 @@ class MainWindow(QWidget):
         self.path_label = QLabel('Caminho da Rede:')
         layout.addWidget(self.path_label)
         self.path_input = QLineEdit(self)
-        self.path_input.setText(os.getenv('PATH_REDE', r'\\192.168.0.28\Dialetica\Dialetica'))
+        self.path_input.setText(os.getenv('PATH_REDE', r'\\rede'))
         layout.addWidget(self.path_input)
 
         self.save_path_btn = QPushButton('Salvar Caminho da Rede', self)
@@ -100,13 +100,13 @@ class MainWindow(QWidget):
         self.db_host_label = QLabel('Host do Banco de Dados:')
         layout.addWidget(self.db_host_label)
         self.db_host_input = QLineEdit(self)
-        self.db_host_input.setText(os.getenv('DB_HOST', 'localhost'))
+        self.db_host_input.setText(os.getenv('DB_HOST', ''))
         layout.addWidget(self.db_host_input)
 
         self.db_user_label = QLabel('Usuário do Banco de Dados:')
         layout.addWidget(self.db_user_label)
         self.db_user_input = QLineEdit(self)
-        self.db_user_input.setText(os.getenv('DB_USER', 'root'))
+        self.db_user_input.setText(os.getenv('DB_USER', ''))
         layout.addWidget(self.db_user_input)
 
         self.db_password_label = QLabel('Senha do Banco de Dados:')
@@ -119,7 +119,7 @@ class MainWindow(QWidget):
         self.db_name_label = QLabel('Nome do Banco de Dados:')
         layout.addWidget(self.db_name_label)
         self.db_name_input = QLineEdit(self)
-        self.db_name_input.setText(os.getenv('DB_NAME', 'sis3'))
+        self.db_name_input.setText(os.getenv('DB_NAME', ''))
         layout.addWidget(self.db_name_input)
 
         self.save_db_btn = QPushButton('Salvar Configurações do Banco de Dados', self)
