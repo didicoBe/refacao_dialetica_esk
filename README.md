@@ -14,7 +14,7 @@ O programa de refação da Dialética foi criado para facilitar o processo de lo
    - Todo o código de manipulação de PDFs se encontra no módulo `pdf_utils.py`, localizado dentro da pasta `core` do projeto.
 
 ## Estrutura do Projeto
-- **Diretório de Rede:** `\\192.168.0.28\Dialetica\Dialetica`
+- **Diretório de Rede:** `\\rede`
   - Este caminho é utilizado para acessar os arquivos. No entanto, ele é configurável, permitindo a adaptação do sistema caso o caminho mude.
 
 - **Identificação de Arquivos:**
@@ -29,7 +29,7 @@ O programa de refação da Dialética foi criado para facilitar o processo de lo
 Para garantir a flexibilidade do sistema, o caminho para encontrar os PDFs na rede é configurável. Atualmente, o caminho padrão é:
 
 ```
-\\192.168.0.28\Dialetica\Dialetica
+\\rede
 ```
 
 Essa configuração pode ser alterada, conforme necessário, para adaptar o sistema a qualquer mudança na infraestrutura.
